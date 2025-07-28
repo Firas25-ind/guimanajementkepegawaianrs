@@ -40,8 +40,10 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
         hapusjadwal = new javax.swing.JButton();
         updatejadwal = new javax.swing.JButton();
         tambahjadwal = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -83,11 +85,20 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1280, 110);
+
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tambah data.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(113, 215, 286, 286);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/update data.png"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(492, 215, 286, 286);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/hapus data.png"))); // NOI18N
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(878, 215, 286, 286);
 
         hapusjadwal.setBackground(new java.awt.Color(204, 255, 204));
         hapusjadwal.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -98,6 +109,8 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
                 hapusjadwalActionPerformed(evt);
             }
         });
+        getContentPane().add(hapusjadwal);
+        hapusjadwal.setBounds(878, 519, 286, 46);
 
         updatejadwal.setBackground(new java.awt.Color(204, 255, 204));
         updatejadwal.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -108,6 +121,8 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
                 updatejadwalActionPerformed(evt);
             }
         });
+        getContentPane().add(updatejadwal);
+        updatejadwal.setBounds(492, 519, 286, 46);
 
         tambahjadwal.setBackground(new java.awt.Color(204, 255, 204));
         tambahjadwal.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -118,44 +133,12 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
                 tambahjadwalActionPerformed(evt);
             }
         });
+        getContentPane().add(tambahjadwal);
+        tambahjadwal.setBounds(113, 519, 286, 46);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tambahjadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9))
-                .addGap(93, 93, 93)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel11))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(updatejadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(100, 100, 100)
-                        .addComponent(hapusjadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tambahjadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(updatejadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hapusjadwal, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 141, Short.MAX_VALUE))
-        );
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -212,6 +195,7 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;

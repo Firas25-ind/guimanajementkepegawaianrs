@@ -42,8 +42,10 @@ public class keloladatapegawai extends javax.swing.JFrame {
         updatedata = new javax.swing.JButton();
         hapusdata = new javax.swing.JButton();
         kelolagaji = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -85,13 +87,24 @@ public class keloladatapegawai extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1280, 110);
+
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/kelolagaji.png"))); // NOI18N
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(952, 265, 286, 286);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tambah data.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(40, 265, 286, 286);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/update data.png"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(344, 265, 286, 286);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/hapus data.png"))); // NOI18N
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(648, 265, 286, 286);
 
         tambahdata.setBackground(new java.awt.Color(204, 255, 204));
         tambahdata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -102,6 +115,8 @@ public class keloladatapegawai extends javax.swing.JFrame {
                 tambahdataActionPerformed(evt);
             }
         });
+        getContentPane().add(tambahdata);
+        tambahdata.setBounds(40, 569, 286, 46);
 
         updatedata.setBackground(new java.awt.Color(204, 255, 204));
         updatedata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -112,6 +127,8 @@ public class keloladatapegawai extends javax.swing.JFrame {
                 updatedataActionPerformed(evt);
             }
         });
+        getContentPane().add(updatedata);
+        updatedata.setBounds(344, 569, 286, 46);
 
         hapusdata.setBackground(new java.awt.Color(204, 255, 204));
         hapusdata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -122,6 +139,8 @@ public class keloladatapegawai extends javax.swing.JFrame {
                 hapusdataActionPerformed(evt);
             }
         });
+        getContentPane().add(hapusdata);
+        hapusdata.setBounds(648, 569, 286, 46);
 
         kelolagaji.setBackground(new java.awt.Color(204, 255, 204));
         kelolagaji.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -132,53 +151,12 @@ public class keloladatapegawai extends javax.swing.JFrame {
                 kelolagajiActionPerformed(evt);
             }
         });
+        getContentPane().add(kelolagaji);
+        kelolagaji.setBounds(952, 569, 286, 46);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(tambahdata, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel11)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel8))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(updatedata, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(hapusdata, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(kelolagaji, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(155, 155, 155)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel8))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tambahdata, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(updatedata, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hapusdata, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kelolagaji, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(115, Short.MAX_VALUE))
-        );
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 20, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -239,6 +217,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel8;
