@@ -16,6 +16,9 @@ public class hapusjadwal extends javax.swing.JFrame {
      */
     public hapusjadwal() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
