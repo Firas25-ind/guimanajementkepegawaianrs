@@ -30,6 +30,7 @@ public class buatabsen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -50,6 +51,7 @@ public class buatabsen extends javax.swing.JFrame {
         jamselesai = new javax.swing.JTextField();
         tanggal = new com.toedter.calendar.JDateChooser();
         simpan = new javax.swing.JButton();
+        Kembali = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -103,6 +105,7 @@ public class buatabsen extends javax.swing.JFrame {
         getContentPane().add(jLabel6);
         jLabel6.setBounds(311, 192, 115, 22);
 
+        buttonGroup1.add(hadir);
         hadir.setText("Hadir");
         hadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,6 +115,7 @@ public class buatabsen extends javax.swing.JFrame {
         getContentPane().add(hadir);
         hadir.setBounds(562, 594, 71, 29);
 
+        buttonGroup1.add(tidakhadir);
         tidakhadir.setText("Tidak Hadir");
         tidakhadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,6 +125,7 @@ public class buatabsen extends javax.swing.JFrame {
         getContentPane().add(tidakhadir);
         tidakhadir.setBounds(634, 594, 115, 29);
 
+        buttonGroup1.add(izin);
         izin.setText("Izin");
         izin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +135,7 @@ public class buatabsen extends javax.swing.JFrame {
         getContentPane().add(izin);
         izin.setBounds(562, 634, 59, 29);
 
+        buttonGroup1.add(sakit);
         sakit.setText("Sakit");
         sakit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,6 +214,16 @@ public class buatabsen extends javax.swing.JFrame {
         getContentPane().add(simpan);
         simpan.setBounds(882, 628, 93, 40);
 
+        Kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KembaliActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Kembali);
+        Kembali.setBounds(770, 630, 100, 40);
+
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel15);
         jLabel15.setBounds(0, 0, 1278, 703);
@@ -251,6 +267,10 @@ public class buatabsen extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_simpanActionPerformed
 
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KembaliActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -287,6 +307,8 @@ public class buatabsen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JRadioButton hadir;
     private javax.swing.JTextField id;
     private javax.swing.JRadioButton izin;

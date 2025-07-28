@@ -9,12 +9,12 @@ package guiadmin;
  *
  * @author insan
  */
-public class kelolagajipegawai extends javax.swing.JFrame {
+public class hapusjadwal extends javax.swing.JFrame {
 
     /**
-     * Creates new form kelolagajipegawai
+     * Creates new form hapusjadwal
      */
-    public kelolagajipegawai() {
+    public hapusjadwal() {
         initComponents();
         this.setSize(1278, 730);
         this.setResizable(false);
@@ -34,16 +34,15 @@ public class kelolagajipegawai extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        kembali = new javax.swing.JButton();
+        simpan = new javax.swing.JButton();
+        hapus = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        simpan = new javax.swing.JButton();
-        kembali = new javax.swing.JButton();
-        update = new javax.swing.JButton();
-        hapus = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -85,31 +84,8 @@ public class kelolagajipegawai extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 110));
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Nama", "ID", "Tanggal", "Gaji"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 979, 243));
-
-        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        simpan.setText("Simpan");
-        simpan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                simpanActionPerformed(evt);
-            }
-        });
-        getContentPane().add(simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 550, -1, 40));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1280, 110);
 
         kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         kembali.setText("Kembali");
@@ -118,16 +94,18 @@ public class kelolagajipegawai extends javax.swing.JFrame {
                 kembaliActionPerformed(evt);
             }
         });
-        getContentPane().add(kembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 550, -1, 40));
+        getContentPane().add(kembali);
+        kembali.setBounds(960, 620, 99, 40);
 
-        update.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        update.setText("Update");
-        update.addActionListener(new java.awt.event.ActionListener() {
+        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        simpan.setText("Simpan");
+        simpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                updateActionPerformed(evt);
+                simpanActionPerformed(evt);
             }
         });
-        getContentPane().add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 448, 40));
+        getContentPane().add(simpan);
+        simpan.setBounds(1070, 620, 93, 40);
 
         hapus.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         hapus.setText("Hapus");
@@ -136,25 +114,40 @@ public class kelolagajipegawai extends javax.swing.JFrame {
                 hapusActionPerformed(evt);
             }
         });
-        getContentPane().add(hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 440, 448, 40));
+        getContentPane().add(hapus);
+        hapus.setBounds(510, 490, 290, 40);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "ID", "Tanggal", "Jam Mulai", "Jam Selesai"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(102, 229, 1068, 237);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_simpanActionPerformed
 
     private void kembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_kembaliActionPerformed
 
-    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
+    private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_updateActionPerformed
+    }//GEN-LAST:event_simpanActionPerformed
 
     private void hapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusActionPerformed
         // TODO add your handling code here:
@@ -177,20 +170,20 @@ public class kelolagajipegawai extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(kelolagajipegawai.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(hapusjadwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(kelolagajipegawai.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(hapusjadwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(kelolagajipegawai.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(hapusjadwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(kelolagajipegawai.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(hapusjadwal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new kelolagajipegawai().setVisible(true);
+                new hapusjadwal().setVisible(true);
             }
         });
     }
@@ -198,7 +191,7 @@ public class kelolagajipegawai extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton hapus;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
@@ -206,6 +199,5 @@ public class kelolagajipegawai extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JButton kembali;
     private javax.swing.JButton simpan;
-    private javax.swing.JButton update;
     // End of variables declaration//GEN-END:variables
 }

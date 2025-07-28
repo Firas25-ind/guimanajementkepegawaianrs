@@ -3,10 +3,33 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/USER/Desktop/New%20folder/guimanajementkepegawaianrs/src/guiadmin/updateabsen.java</file>
             <file>file:/C:/Users/USER/Desktop/New%20folder/guimanajementkepegawaianrs/src/DatabaseConnection.java</file>
             <file>file:/C:/Users/USER/Desktop/New%20folder/guimanajementkepegawaianrs/src/guiadmin/kelolajadwalkerja.java</file>
             <file>file:/C:/Users/USER/Desktop/New%20folder/guimanajementkepegawaianrs/src/guiadmin/updatejadwal.java</file>
+=======
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/Guipegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/buatdatapegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/hapusdatapegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolaabsen.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/deleteabsen.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/keloladatapegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolajadwalkerja.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/menuadmin.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updatedatapegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/kelolacuti.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/loginsistem.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/chekinabsen.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolagajipegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/menupegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/buatabsen.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/lihatdata.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updateabsen.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updatejadwal.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/hapusjadwal.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/lihatgaji.java</file>
+>>>>>>> 6b5d4d44b3a60fd5b08621841a3bc40ce7373baf
         </group>
     </open-files>
 </project-private>

@@ -16,6 +16,9 @@ public class pertimbanganpengajuancuti extends javax.swing.JFrame {
      */
     public pertimbanganpengajuancuti() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,14 +30,21 @@ public class pertimbanganpengajuancuti extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        izinkan = new javax.swing.JRadioButton();
+        tidakdiizinkan = new javax.swing.JRadioButton();
+        simpan = new javax.swing.JButton();
+        Kembali = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -76,6 +86,9 @@ public class pertimbanganpengajuancuti extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 0, 1280, 110);
+
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null},
@@ -89,26 +102,71 @@ public class pertimbanganpengajuancuti extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(157, 157, 157)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 937, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 273, Short.MAX_VALUE))
-        );
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(90, 180, 1085, 216);
+
+        buttonGroup1.add(izinkan);
+        izinkan.setText("Izinkan");
+        izinkan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                izinkanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(izinkan);
+        izinkan.setBounds(1093, 444, 83, 29);
+
+        buttonGroup1.add(tidakdiizinkan);
+        tidakdiizinkan.setText("Tidak Diizinkan");
+        tidakdiizinkan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tidakdiizinkanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tidakdiizinkan);
+        tidakdiizinkan.setBounds(945, 444, 141, 29);
+
+        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        simpan.setText("Simpan");
+        simpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(simpan);
+        simpan.setBounds(1080, 510, 93, 40);
+
+        Kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KembaliActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Kembali);
+        Kembali.setBounds(970, 510, 100, 40);
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tidakdiizinkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tidakdiizinkanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tidakdiizinkanActionPerformed
+
+    private void izinkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_izinkanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_izinkanActionPerformed
+
+    private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_simpanActionPerformed
+
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -146,11 +204,17 @@ public class pertimbanganpengajuancuti extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JRadioButton izinkan;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JButton simpan;
+    private javax.swing.JRadioButton tidakdiizinkan;
     // End of variables declaration//GEN-END:variables
 }

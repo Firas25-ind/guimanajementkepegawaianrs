@@ -16,6 +16,9 @@ public class updatejadwal extends javax.swing.JFrame {
      */
     public updatejadwal() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -42,6 +45,7 @@ public class updatejadwal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        Kembali = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -159,6 +163,16 @@ public class updatejadwal extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1280, 110);
 
+        Kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KembaliActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Kembali);
+        Kembali.setBounds(770, 630, 100, 40);
+
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel15);
         jLabel15.setBounds(0, 0, 1278, 703);
@@ -185,6 +199,10 @@ public class updatejadwal extends javax.swing.JFrame {
     private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_simpanActionPerformed
+
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KembaliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,6 +240,7 @@ public class updatejadwal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
     private javax.swing.JTextField id;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

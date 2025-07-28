@@ -16,6 +16,9 @@ public class buatjadwal extends javax.swing.JFrame {
      */
     public buatjadwal() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,7 +30,6 @@ public class buatjadwal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel15 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jamselesai = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -38,62 +40,85 @@ public class buatjadwal extends javax.swing.JFrame {
         id = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         nama = new javax.swing.JTextField();
-        simpan = new javax.swing.JButton();
+        Kembali = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        simpan = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().setLayout(null);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel13.setText("Jam Selesai");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(311, 519, 88, 22);
 
         jamselesai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jamselesaiActionPerformed(evt);
             }
         });
+        getContentPane().add(jamselesai);
+        jamselesai.setBounds(886, 513, 89, 36);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel12.setText("Jam Mulai");
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(311, 448, 79, 22);
 
         jammulai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jammulaiActionPerformed(evt);
             }
         });
+        getContentPane().add(jammulai);
+        jammulai.setBounds(886, 442, 89, 36);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setText("Tanggal");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(311, 367, 62, 22);
+        getContentPane().add(tanggal);
+        tanggal.setBounds(444, 355, 531, 38);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel7.setText("ID");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(311, 279, 17, 22);
 
         id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 idActionPerformed(evt);
             }
         });
+        getContentPane().add(id);
+        id.setBounds(444, 273, 531, 36);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel6.setText("Nama Lengkap");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(311, 196, 115, 22);
 
         nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 namaActionPerformed(evt);
             }
         });
+        getContentPane().add(nama);
+        nama.setBounds(444, 190, 531, 36);
 
-        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        simpan.setText("Simpan");
-        simpan.addActionListener(new java.awt.event.ActionListener() {
+        Kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        Kembali.setText("Kembali");
+        Kembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                simpanActionPerformed(evt);
+                KembaliActionPerformed(evt);
             }
         });
+        getContentPane().add(Kembali);
+        Kembali.setBounds(770, 630, 100, 40);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -135,94 +160,22 @@ public class buatjadwal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1280, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(311, 311, 311)
-                            .addComponent(jLabel7)
-                            .addGap(116, 116, 116)
-                            .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(444, 444, 444)
-                            .addComponent(tanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(886, 886, 886)
-                            .addComponent(jamselesai, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(311, 311, 311)
-                            .addComponent(jLabel12))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(444, 444, 444)
-                            .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 531, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(311, 311, 311)
-                            .addComponent(jLabel10))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(882, 882, 882)
-                            .addComponent(simpan))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(311, 311, 311)
-                            .addComponent(jLabel13))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(886, 886, 886)
-                            .addComponent(jammulai, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(311, 311, 311)
-                            .addComponent(jLabel6))
-                        .addComponent(jLabel15))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 706, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(162, 162, 162)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(6, 6, 6)
-                                    .addComponent(jLabel7))
-                                .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(46, 46, 46)
-                            .addComponent(tanggal, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(120, 120, 120)
-                            .addComponent(jamselesai, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(447, 447, 447)
-                            .addComponent(jLabel12))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(189, 189, 189)
-                            .addComponent(nama, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(366, 366, 366)
-                            .addComponent(jLabel10))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(631, 631, 631)
-                            .addComponent(simpan, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(518, 518, 518)
-                            .addComponent(jLabel13))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(441, 441, 441)
-                            .addComponent(jammulai, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(195, 195, 195)
-                            .addComponent(jLabel6))
-                        .addComponent(jLabel15))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 1, 1280, 110);
+
+        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        simpan.setText("Simpan");
+        simpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(simpan);
+        simpan.setBounds(880, 630, 93, 40);
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -242,6 +195,10 @@ public class buatjadwal extends javax.swing.JFrame {
     private void namaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_namaActionPerformed
+
+    private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_KembaliActionPerformed
 
     private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
         // TODO add your handling code here:
@@ -283,6 +240,7 @@ public class buatjadwal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Kembali;
     private javax.swing.JTextField id;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
