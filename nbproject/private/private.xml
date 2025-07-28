@@ -9,6 +9,7 @@
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolaabsen.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/deleteabsen.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/keloladatapegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolajadwalkerja.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/menuadmin.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updatedatapegawai.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/kelolacuti.java</file>
@@ -17,10 +18,12 @@
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/chekinabsen.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/kelolagajipegawai.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/menupegawai.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/buatabsen.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/lihatdata.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updateabsen.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/pertimbanganpengajuancuti.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/updatejadwal.java</file>
+            <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guiadmin/hapusjadwal.java</file>
             <file>file:/C:/Users/insan/Documents/NetBeansProjects/guimanajementkepegawaianrs/src/guipegawai/lihatgaji.java</file>
         </group>
     </open-files>
