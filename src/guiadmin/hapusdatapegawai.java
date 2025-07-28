@@ -135,7 +135,7 @@ public class hapusdatapegawai extends javax.swing.JFrame {
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel15);
-        jLabel15.setBounds(0, 0, 1278, 703);
+        jLabel15.setBounds(0, 0, 1280, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
