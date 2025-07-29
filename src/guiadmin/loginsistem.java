@@ -11,6 +11,8 @@ package guiadmin;
  */
 public class loginsistem extends javax.swing.JFrame {
 
+    String name; 
+    String pass;
     /**
      * Creates new form loginsistem
      */
@@ -20,7 +22,7 @@ public class loginsistem extends javax.swing.JFrame {
         this.setResizable(false);
         this.setLocationRelativeTo(null);
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -58,8 +60,13 @@ public class loginsistem extends javax.swing.JFrame {
         login.setBounds(617, 559, 89, 40);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Admin", "Pegawai" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(617, 505, 89, 36);
+        jComboBox1.setBounds(617, 505, 78, 36);
         getContentPane().add(password);
         password.setBounds(510, 440, 287, 47);
 
@@ -126,7 +133,7 @@ public class loginsistem extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1280, 110);
+        jPanel1.setBounds(0, 0, 1271, 110);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel14);
@@ -136,8 +143,13 @@ public class loginsistem extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        // TODO add your handling code here:
+        name = username.getName();
+        pass = password.getName();
     }//GEN-LAST:event_loginActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
