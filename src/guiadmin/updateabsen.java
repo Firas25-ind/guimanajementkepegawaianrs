@@ -53,6 +53,8 @@ public class updateabsen extends javax.swing.JFrame {
         izin = new javax.swing.JRadioButton();
         sakit = new javax.swing.JRadioButton();
         Kembali = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -107,7 +109,7 @@ public class updateabsen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(id);
-        id.setBounds(444, 272, 531, 36);
+        id.setBounds(450, 380, 531, 36);
 
         jamselesai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,12 +117,12 @@ public class updateabsen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jamselesai);
-        jamselesai.setBounds(886, 512, 89, 36);
+        jamselesai.setBounds(890, 540, 89, 36);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel7.setText("ID");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(311, 278, 17, 22);
+        jLabel7.setBounds(310, 390, 17, 22);
 
         jammulai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,19 +130,19 @@ public class updateabsen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jammulai);
-        jammulai.setBounds(886, 441, 89, 36);
+        jammulai.setBounds(890, 490, 89, 36);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel6.setText("Nama Lengkap");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(311, 195, 115, 22);
+        jLabel6.setBounds(310, 340, 115, 22);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setText("Tanggal");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(311, 366, 62, 22);
+        jLabel10.setBounds(310, 440, 62, 22);
         getContentPane().add(tanggal);
-        tanggal.setBounds(444, 354, 531, 38);
+        tanggal.setBounds(450, 430, 531, 38);
 
         simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         simpan.setText("Simpan");
@@ -155,12 +157,12 @@ public class updateabsen extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel12.setText("Jam Mulai");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(311, 447, 79, 22);
+        jLabel12.setBounds(310, 500, 79, 22);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel13.setText("Jam Selesai");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(311, 518, 88, 22);
+        jLabel13.setBounds(310, 550, 88, 22);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel14.setText("Status Kehadiran");
@@ -193,7 +195,7 @@ public class updateabsen extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nama);
-        nama.setBounds(444, 189, 531, 36);
+        nama.setBounds(450, 330, 531, 36);
 
         buttonGroup1.add(izin);
         izin.setText("Izin");
@@ -224,6 +226,22 @@ public class updateabsen extends javax.swing.JFrame {
         });
         getContentPane().add(Kembali);
         Kembali.setBounds(770, 630, 100, 40);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "ID", "Tanggal", "Jam Mulai", "Jam Selesai", "Status Kehadiran"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(50, 130, 1180, 180);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel15);
@@ -325,6 +343,8 @@ public class updateabsen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jammulai;
     private javax.swing.JTextField jamselesai;
     private javax.swing.JTextField nama;

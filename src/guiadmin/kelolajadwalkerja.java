@@ -40,6 +40,7 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
         hapusjadwal = new javax.swing.JButton();
         updatejadwal = new javax.swing.JButton();
         tambahjadwal = new javax.swing.JButton();
+        kembali1 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -136,6 +137,16 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
         getContentPane().add(tambahjadwal);
         tambahjadwal.setBounds(113, 519, 286, 46);
 
+        kembali1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        kembali1.setText("Kembali");
+        kembali1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kembali1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(kembali1);
+        kembali1.setBounds(1070, 600, 99, 40);
+
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel14);
         jLabel14.setBounds(0, 0, 1278, 703);
@@ -154,6 +165,10 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
     private void tambahjadwalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahjadwalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tambahjadwalActionPerformed
+
+    private void kembali1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembali1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kembali1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,6 +215,7 @@ public class kelolajadwalkerja extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton kembali1;
     private javax.swing.JButton tambahjadwal;
     private javax.swing.JButton updatejadwal;
     // End of variables declaration//GEN-END:variables

@@ -42,6 +42,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
         updatedata = new javax.swing.JButton();
         hapusdata = new javax.swing.JButton();
         kelolagaji = new javax.swing.JButton();
+        kembali1 = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -92,19 +93,19 @@ public class keloladatapegawai extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/kelolagaji.png"))); // NOI18N
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(952, 265, 286, 286);
+        jLabel8.setBounds(950, 240, 286, 286);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/tambah data.png"))); // NOI18N
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(40, 265, 286, 286);
+        jLabel9.setBounds(40, 240, 286, 286);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/update data.png"))); // NOI18N
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(344, 265, 286, 286);
+        jLabel10.setBounds(340, 240, 286, 286);
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/hapus data.png"))); // NOI18N
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(648, 265, 286, 286);
+        jLabel11.setBounds(650, 240, 286, 286);
 
         tambahdata.setBackground(new java.awt.Color(204, 255, 204));
         tambahdata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -116,7 +117,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tambahdata);
-        tambahdata.setBounds(40, 569, 286, 46);
+        tambahdata.setBounds(40, 540, 286, 46);
 
         updatedata.setBackground(new java.awt.Color(204, 255, 204));
         updatedata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -128,7 +129,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(updatedata);
-        updatedata.setBounds(344, 569, 286, 46);
+        updatedata.setBounds(340, 540, 286, 46);
 
         hapusdata.setBackground(new java.awt.Color(204, 255, 204));
         hapusdata.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -140,7 +141,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(hapusdata);
-        hapusdata.setBounds(648, 569, 286, 46);
+        hapusdata.setBounds(650, 540, 286, 46);
 
         kelolagaji.setBackground(new java.awt.Color(204, 255, 204));
         kelolagaji.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
@@ -152,11 +153,21 @@ public class keloladatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(kelolagaji);
-        kelolagaji.setBounds(952, 569, 286, 46);
+        kelolagaji.setBounds(950, 540, 286, 46);
+
+        kembali1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        kembali1.setText("Kembali");
+        kembali1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kembali1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(kembali1);
+        kembali1.setBounds(1140, 620, 99, 40);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel14);
-        jLabel14.setBounds(0, 20, 1278, 703);
+        jLabel14.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -176,6 +187,10 @@ public class keloladatapegawai extends javax.swing.JFrame {
     private void kelolagajiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kelolagajiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_kelolagajiActionPerformed
+
+    private void kembali1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembali1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kembali1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,6 +239,7 @@ public class keloladatapegawai extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton kelolagaji;
+    private javax.swing.JButton kembali1;
     private javax.swing.JButton tambahdata;
     private javax.swing.JButton updatedata;
     // End of variables declaration//GEN-END:variables

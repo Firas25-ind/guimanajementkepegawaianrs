@@ -55,7 +55,8 @@ public class updatedatapegawai extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,7 +88,7 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jabatan);
-        jabatan.setBounds(430, 525, 268, 36);
+        jabatan.setBounds(420, 590, 268, 36);
 
         tanggallahir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,17 +96,17 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tanggallahir);
-        tanggallahir.setBounds(122, 525, 268, 36);
+        tanggallahir.setBounds(110, 590, 268, 36);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel8.setText("Tanggal Lahir");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(122, 485, 104, 22);
+        jLabel8.setBounds(110, 550, 104, 22);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel11.setText("Jabatan");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(430, 485, 60, 22);
+        jLabel11.setBounds(420, 550, 60, 22);
 
         status.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,7 +114,7 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(status);
-        status.setBounds(430, 431, 268, 36);
+        status.setBounds(420, 490, 268, 36);
 
         jeniskelamin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,17 +122,17 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jeniskelamin);
-        jeniskelamin.setBounds(122, 431, 268, 36);
+        jeniskelamin.setBounds(110, 490, 268, 36);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel7.setText("Jenis Kelamin");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(122, 391, 105, 22);
+        jLabel7.setBounds(110, 450, 105, 22);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel10.setText("Status");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(430, 391, 47, 22);
+        jLabel10.setBounds(420, 450, 47, 22);
 
         id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,12 +140,12 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(id);
-        id.setBounds(122, 337, 268, 36);
+        id.setBounds(110, 400, 268, 36);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel6.setText("ID");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(122, 299, 17, 22);
+        jLabel6.setBounds(110, 360, 17, 22);
 
         nama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,24 +153,24 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nama);
-        nama.setBounds(122, 245, 268, 36);
+        nama.setBounds(110, 310, 268, 36);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel5.setText("Nama Lengkap");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(122, 207, 115, 22);
+        jLabel5.setBounds(110, 270, 115, 22);
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(430, 245, 430, 128);
+        jScrollPane1.setBounds(420, 310, 430, 128);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel9.setText("Alamat");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(430, 207, 55, 22);
+        jLabel9.setBounds(420, 270, 55, 22);
 
         email.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,12 +178,12 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(email);
-        email.setBounds(902, 337, 268, 36);
+        email.setBounds(890, 400, 268, 36);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel13.setText("E-mail");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(902, 299, 49, 22);
+        jLabel13.setBounds(890, 360, 49, 22);
 
         nomorhp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,12 +191,12 @@ public class updatedatapegawai extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nomorhp);
-        nomorhp.setBounds(902, 245, 268, 36);
+        nomorhp.setBounds(890, 310, 268, 36);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel12.setText("No  HP");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(902, 207, 53, 22);
+        jLabel12.setBounds(890, 270, 53, 22);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -240,10 +241,21 @@ public class updatedatapegawai extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1280, 110);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel4.setText("Buat Data Pegawai");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(122, 159, 230, 32);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "ID", "Jenis Kelamin", "Tanggal Lahir", "Alamat", "Status", "Jabatan", "No Hp", "E-mail"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(30, 130, 1210, 120);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
         getContentPane().add(jLabel14);
@@ -338,7 +350,6 @@ public class updatedatapegawai extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -346,6 +357,8 @@ public class updatedatapegawai extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jabatan;
     private javax.swing.JTextField jeniskelamin;
