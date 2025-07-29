@@ -30,95 +30,28 @@ public class updatejadwal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel13 = new javax.swing.JLabel();
-        jamselesai = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jammulai = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        tanggal = new com.toedter.calendar.JDateChooser();
-        jLabel7 = new javax.swing.JLabel();
-        id = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        nama = new javax.swing.JTextField();
-        simpan = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        id = new javax.swing.JTextField();
+        jamselesai = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jammulai = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        tanggal = new com.toedter.calendar.JDateChooser();
+        simpan = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        nama = new javax.swing.JTextField();
         Kembali = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel13.setText("Jam Selesai");
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(311, 518, 88, 22);
-
-        jamselesai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jamselesaiActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jamselesai);
-        jamselesai.setBounds(886, 512, 89, 36);
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel12.setText("Jam Mulai");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(311, 447, 79, 22);
-
-        jammulai.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jammulaiActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jammulai);
-        jammulai.setBounds(886, 441, 89, 36);
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel10.setText("Tanggal");
-        getContentPane().add(jLabel10);
-        jLabel10.setBounds(311, 366, 62, 22);
-        getContentPane().add(tanggal);
-        tanggal.setBounds(444, 354, 531, 38);
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel7.setText("ID");
-        getContentPane().add(jLabel7);
-        jLabel7.setBounds(311, 278, 17, 22);
-
-        id.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idActionPerformed(evt);
-            }
-        });
-        getContentPane().add(id);
-        id.setBounds(444, 272, 531, 36);
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel6.setText("Nama Lengkap");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(311, 195, 115, 22);
-
-        nama.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                namaActionPerformed(evt);
-            }
-        });
-        getContentPane().add(nama);
-        nama.setBounds(444, 189, 531, 36);
-
-        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        simpan.setText("Simpan");
-        simpan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                simpanActionPerformed(evt);
-            }
-        });
-        getContentPane().add(simpan);
-        simpan.setBounds(882, 631, 93, 40);
 
         jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
@@ -163,6 +96,75 @@ public class updatejadwal extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1280, 110);
 
+        id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idActionPerformed(evt);
+            }
+        });
+        getContentPane().add(id);
+        id.setBounds(450, 380, 531, 36);
+
+        jamselesai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jamselesaiActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jamselesai);
+        jamselesai.setBounds(890, 540, 89, 36);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel7.setText("ID");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(310, 390, 17, 22);
+
+        jammulai.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jammulaiActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jammulai);
+        jammulai.setBounds(890, 490, 89, 36);
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel6.setText("Nama Lengkap");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(310, 340, 115, 22);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel10.setText("Tanggal");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(310, 440, 62, 22);
+        getContentPane().add(tanggal);
+        tanggal.setBounds(450, 430, 531, 38);
+
+        simpan.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        simpan.setText("Simpan");
+        simpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                simpanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(simpan);
+        simpan.setBounds(882, 631, 93, 40);
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel12.setText("Jam Mulai");
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(310, 500, 79, 22);
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        jLabel13.setText("Jam Selesai");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(310, 550, 88, 22);
+
+        nama.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                namaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(nama);
+        nama.setBounds(450, 330, 531, 36);
+
         Kembali.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         Kembali.setText("Kembali");
         Kembali.addActionListener(new java.awt.event.ActionListener() {
@@ -173,12 +175,32 @@ public class updatejadwal extends javax.swing.JFrame {
         getContentPane().add(Kembali);
         Kembali.setBounds(770, 630, 100, 40);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
-        getContentPane().add(jLabel15);
-        jLabel15.setBounds(0, 0, 1278, 703);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Nama", "ID", "Tanggal", "Jam Mulai", "Jam Selesai"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(50, 130, 1180, 180);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idActionPerformed
 
     private void jamselesaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jamselesaiActionPerformed
         // TODO add your handling code here:
@@ -188,17 +210,13 @@ public class updatejadwal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jammulaiActionPerformed
 
-    private void idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idActionPerformed
+    private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idActionPerformed
+    }//GEN-LAST:event_simpanActionPerformed
 
     private void namaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_namaActionPerformed
-
-    private void simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_simpanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_simpanActionPerformed
 
     private void KembaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KembaliActionPerformed
         // TODO add your handling code here:
@@ -246,12 +264,14 @@ public class updatejadwal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jammulai;
     private javax.swing.JTextField jamselesai;
     private javax.swing.JTextField nama;

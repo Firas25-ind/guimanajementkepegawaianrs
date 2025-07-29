@@ -40,7 +40,8 @@ public class kelolaabsen extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         hapusabsen = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        kembali1 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -136,9 +137,19 @@ public class kelolaabsen extends javax.swing.JFrame {
         getContentPane().add(jLabel11);
         jLabel11.setBounds(883, 220, 286, 286);
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
-        getContentPane().add(jLabel15);
-        jLabel15.setBounds(0, 0, 1278, 703);
+        kembali1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        kembali1.setText("Kembali");
+        kembali1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kembali1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(kembali1);
+        kembali1.setBounds(1070, 610, 99, 40);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/backround.jpg"))); // NOI18N
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(0, 0, 1278, 703);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -154,6 +165,10 @@ public class kelolaabsen extends javax.swing.JFrame {
     private void hapusabsenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusabsenActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_hapusabsenActionPerformed
+
+    private void kembali1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembali1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kembali1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,11 +210,12 @@ public class kelolaabsen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton kembali1;
     private javax.swing.JButton tambahabsen;
     private javax.swing.JButton updateabsen;
     // End of variables declaration//GEN-END:variables

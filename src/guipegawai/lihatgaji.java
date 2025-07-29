@@ -16,6 +16,9 @@ public class lihatgaji extends javax.swing.JFrame {
      */
     public lihatgaji() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -84,21 +87,21 @@ public class lihatgaji extends javax.swing.JFrame {
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Tanggal", "Gaji Pokok", "Tunjangan", "Potongan", "Total Gaji"
+                "Nama", "ID", "Tanggal", "Gaji"
             }
         ));
         jScrollPane2.setViewportView(jTable2);

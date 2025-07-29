@@ -17,6 +17,9 @@ public class chekinabsen extends javax.swing.JFrame {
      */
     public chekinabsen() {
         initComponents();
+        this.setSize(1278, 730);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
     }
 
     /**
