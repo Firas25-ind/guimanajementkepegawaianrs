@@ -29,7 +29,7 @@ public class PegawaiDAO {
              ResultSet rs = stmt.executeQuery(sql)) {
             while (rs.next()) {
                 Pegawai p = new Pegawai(
-                    rs.getInt("id"),
+                    rs.getInt("id_pegawai"),
                     rs.getString("password"),
                     rs.getString("alamat"),
                     rs.getString("nama"),
@@ -47,7 +47,7 @@ public class PegawaiDAO {
     }
 
     public void update(Pegawai p) {
-        String sql = "UPDATE pegawai SET password=?, alamat=?, nama=?, email=?, no_telepon=?, tanggal_masuk=?, jabatan=? WHERE id=?";
+        String sql = "UPDATE pegawai SET password=?, alamat=?, nama=?, email=?, no_telepon=?, tanggal_masuk=?, jabatan=? WHERE id_pegawai=?";
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, p.getPassword());
@@ -66,7 +66,7 @@ public class PegawaiDAO {
     }
 
     public void delete(int id) {
-        String sql = "DELETE FROM pegawai WHERE id=?";
+        String sql = "DELETE FROM pegawai WHERE id_pegawai=?";
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, id);

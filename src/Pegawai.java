@@ -11,7 +11,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 
 public class Pegawai {
-    private int id;
+    private int id_pegawai;
     private String password;
     private String alamat;
     private String nama;
@@ -22,7 +22,7 @@ public class Pegawai {
 
     public Pegawai() {}
     public Pegawai(
-        int id, 
+        int id_pegawai, 
         String password, 
         String alamat,
         String nama,
@@ -31,7 +31,7 @@ public class Pegawai {
         Date tanggalMasuk,
         String jabatan
         ){
-        this.id = id;
+        this.id_pegawai = id_pegawai;
         this.password = password;
         this.alamat = alamat;
         this.nama = nama;
@@ -41,7 +41,7 @@ public class Pegawai {
         this.jabatan = jabatan;
     }
 
-    public int getId() { return id; }
+    public int getId() { return id_pegawai; }
     public String getPassword() { return password; }
     public String getAlamat() { return alamat; }
     public String getNama() { return nama; }
@@ -50,7 +50,7 @@ public class Pegawai {
     public Date getTanggalMasuk() { return tanggalMasuk; }
     public String getJabatan() { return jabatan; }
 
-    public void setId(int id) { this.id = id; }
+    public void setId(int id_pegawai) { this.id_pegawai = id_pegawai; }
     public void setPassword(String password) { this.password = password; }
     public void setAlamat(String alamat) { this.alamat = alamat; }
     public void setNama(String nama) { this.nama = nama; }

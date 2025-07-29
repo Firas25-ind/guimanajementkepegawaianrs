@@ -1,16 +1,22 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
+/**
+ *
+ * @author Hadi
+ */
 public class DatabaseConnection {
+
+    private static final String URL = "jdbc:mysql://localhost:3306/kepegawaian_rs";
+    private static final String USER = "root";
+    private static final String PASS = "";
+
     public static Connection getConnection() {
         try {
-            String url = "jdbc:mysql://localhost:3306/yourdbname";
-            String user = "root";
-            String pass = "";
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection(url, user, pass);
-        } catch (Exception e) {
-            e.printStackTrace();
+           return DriverManager.getConnection(URL, USER, PASS);
+        } catch (SQLException e) {
+            System.out.println("Koneksi database gagal: " + e.getMessage());
             return null;
         }
     }
